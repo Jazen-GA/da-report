@@ -1,0 +1,214 @@
+[
+  {
+    "table": "product",
+    "row_count": 8133507,
+    "official_count": 8133507,
+    "row_diff": 0,
+    "row_diff_pct": 0.0,
+    "field_validation": {
+      "expected": [
+        "item_id",
+        "title",
+        "pict_url",
+        "category",
+        "brand_id",
+        "seller_id"
+      ],
+      "actual_core": [
+        "item_id",
+        "title",
+        "pict_url",
+        "category",
+        "brand_id",
+        "seller_id"
+      ],
+      "missing": [],
+      "extra": [],
+      "match": true
+    },
+    "fields": {
+      "item_id": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 8133507,
+        "min": 1,
+        "max": 8133507
+      },
+      "title": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 7829846
+      },
+      "pict_url": {
+        "null_count": 45,
+        "null_rate": 0.0006,
+        "distinct_count": 7962261
+      },
+      "category": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 8116,
+        "top10": [
+          {
+            "category": "10-2787",
+            "count": 177522
+          },
+          {
+            "category": "39-6833",
+            "count": 126273
+          },
+          {
+            "category": "60-32",
+            "count": 112433
+          },
+          {
+            "category": "48-6503",
+            "count": 97017
+          },
+          {
+            "category": "10-32",
+            "count": 84466
+          },
+          {
+            "category": "60-4517",
+            "count": 78058
+          },
+          {
+            "category": "35-4832",
+            "count": 77041
+          },
+          {
+            "category": "10-5961",
+            "count": 65252
+          },
+          {
+            "category": "35-5194",
+            "count": 63378
+          },
+          {
+            "category": "90-4476",
+            "count": 62732
+          }
+        ]
+      },
+      "brand_id": {
+        "null_count": 2000447,
+        "null_rate": 24.5951,
+        "distinct_count": 89367,
+        "sample_values": [
+          "b29211",
+          "b47686",
+          "b57401",
+          "b77108",
+          "b44185"
+        ]
+      },
+      "seller_id": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 86799
+      }
+    }
+  },
+  {
+    "table": "log",
+    "row_count": 1259003848,
+    "official_count": 1333729303,
+    "row_diff": -74725455,
+    "row_diff_pct": 5.6027,
+    "field_validation": {
+      "expected": [
+        "item_id",
+        "user_id",
+        "action",
+        "vtime"
+      ],
+      "actual_core": [
+        "item_id",
+        "user_id",
+        "action",
+        "vtime"
+      ],
+      "missing": [],
+      "extra": [],
+      "match": true
+    },
+    "fields": {
+      "item_id": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 8105418,
+        "min": 1,
+        "max": 8133507
+      },
+      "user_id": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 9652328
+      },
+      "action": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 4,
+        "click": 1178609589,
+        "click_pct": 93.61,
+        "collect": 30582100,
+        "collect_pct": 2.43,
+        "cart": 37897780,
+        "cart_pct": 3.01,
+        "alipay": 11914379,
+        "alipay_pct": 0.95,
+        "invalid": 0
+      },
+      "vtime": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 15770159,
+        "min_time": "2013-04-01 00:00:00",
+        "max_time": "2013-10-01 00:00:01",
+        "invalid_format": 0
+      }
+    }
+  },
+  {
+    "table": "review",
+    "row_count": 11201322,
+    "official_count": 11224814,
+    "row_diff": -23492,
+    "row_diff_pct": 0.2093,
+    "field_validation": {
+      "expected": [
+        "item_id",
+        "user_id",
+        "feedback"
+      ],
+      "actual_core": [
+        "item_id",
+        "user_id",
+        "feedback"
+      ],
+      "missing": [],
+      "extra": [],
+      "match": true
+    },
+    "fields": {
+      "item_id": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 5071049,
+        "min": 3,
+        "max": 8133507
+      },
+      "user_id": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 7350848
+      },
+      "feedback": {
+        "null_count": 0,
+        "null_rate": 0.0,
+        "distinct_count": 10042279
+      }
+    }
+  }
+]

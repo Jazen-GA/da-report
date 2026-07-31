@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-07-30 02:20:45",
+  "dataset": "Rec-Tmall",
+  "tables": {
+    "product": {
+      "description": "商品属性表",
+      "row_count": 8133507,
+      "fields": [
+        {
+          "name": "item_id",
+          "type": "int",
+          "description": "商品ID，唯一标识",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "NLP提取的关键词，空格分隔",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "pict_url",
+          "type": "string",
+          "description": "商品图片URL",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "description": "类别，格式x-y",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "brand_id",
+          "type": "string",
+          "description": "品牌ID，如b1",
+          "null_rate": "24.60%"
+        },
+        {
+          "name": "seller_id",
+          "type": "string",
+          "description": "商家ID，如s1",
+          "null_rate": "0.00%"
+        }
+      ]
+    },
+    "log": {
+      "description": "用户行为日志表",
+      "row_count": 1259003848,
+      "fields": [
+        {
+          "name": "item_id",
+          "type": "int",
+          "description": "商品ID",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "user_id",
+          "type": "string",
+          "description": "用户ID，如u9774184",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "action",
+          "type": "string",
+          "description": "行为类型: click/collect/cart/alipay",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "vtime",
+          "type": "string",
+          "description": "行为时间，格式yyyy-mm-dd hh:mm:ss",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "action_date",
+          "type": "date",
+          "description": "行为日期（分区字段，从vtime解析）"
+        },
+        {
+          "name": "action_type",
+          "type": "string",
+          "description": "行为类型（分区字段，同action）"
+        }
+      ]
+    },
+    "review": {
+      "description": "用户评论表",
+      "row_count": 11201322,
+      "fields": [
+        {
+          "name": "item_id",
+          "type": "int",
+          "description": "商品ID",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "user_id",
+          "type": "string",
+          "description": "用户ID",
+          "null_rate": "0.00%"
+        },
+        {
+          "name": "feedback",
+          "type": "string",
+          "description": "NLP提取的评论关键词，空格分隔",
+          "null_rate": "0.00%"
+        }
+      ]
+    }
+  }
+}
